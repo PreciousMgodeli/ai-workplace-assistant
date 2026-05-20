@@ -98,7 +98,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <head>
         <HeadContent />
       </head>
@@ -116,12 +116,15 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <SidebarProvider>
-        <div className="flex min-h-screen w-full bg-background">
+        <div className="flex min-h-screen w-full">
           <AppSidebar />
           <div className="flex min-w-0 flex-1 flex-col">
-            <header className="sticky top-0 z-20 flex h-12 items-center gap-2 border-b bg-background/80 px-3 backdrop-blur">
+            <header className="sticky top-0 z-20 flex h-14 items-center gap-2 border-b border-border/60 bg-background/40 px-4 backdrop-blur-xl">
               <SidebarTrigger />
-              <span className="text-sm font-medium text-muted-foreground">WorkAI</span>
+              <span className="text-sm font-semibold gradient-text">WorkAI</span>
+              <span className="ml-auto text-[11px] text-muted-foreground hidden sm:inline">
+                AI-generated content may be inaccurate.
+              </span>
             </header>
             <main className="flex-1">
               <Outlet />
