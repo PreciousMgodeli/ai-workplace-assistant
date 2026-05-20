@@ -81,7 +81,7 @@ Goal/Message: ${intent}`
               placeholder="Let them know the deck is ready, ask for feedback by Friday, mention the offsite next week…"
             />
           </div>
-          <Button onClick={generate} disabled={loading} className="w-full">
+          <Button onClick={generate} disabled={loading} className="w-full gradient-primary shadow-glow hover:opacity-90">
             {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : "Generate email"}
           </Button>
         </div>

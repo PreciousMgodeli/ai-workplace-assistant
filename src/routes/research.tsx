@@ -68,7 +68,7 @@ Audience: ${audience || "General professional"}`
             <Label>Audience (optional)</Label>
             <Input value={audience} onChange={(e) => setAudience(e.target.value)} placeholder="e.g. Non-technical execs" />
           </div>
-          <Button onClick={run} disabled={loading} className="w-full">
+          <Button onClick={run} disabled={loading} className="w-full gradient-primary shadow-glow hover:opacity-90">
             {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : "Research"}
           </Button>
         </div>

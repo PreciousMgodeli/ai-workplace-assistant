@@ -52,7 +52,7 @@ function MeetingsPage() {
               placeholder="Paste raw notes, bullet points, or full transcript…"
             />
           </div>
-          <Button onClick={run} disabled={loading} className="w-full">
+          <Button onClick={run} disabled={loading} className="w-full gradient-primary shadow-glow hover:opacity-90">
             {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : "Summarize"}
           </Button>
         </div>
