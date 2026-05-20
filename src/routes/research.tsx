@@ -48,7 +48,7 @@ Audience: ${audience || "General professional"}`
       icon={<Search className="h-5 w-5" />}
     >
       <div className="grid gap-6 lg:grid-cols-2">
-        <div className="space-y-4 rounded-lg border bg-card p-5">
+        <div className="space-y-4 glass rounded-xl p-5">
           <div className="grid gap-2">
             <Label>Topic</Label>
             <Input value={topic} onChange={(e) => setTopic(e.target.value)} placeholder="e.g. Vector databases for SaaS search" />
