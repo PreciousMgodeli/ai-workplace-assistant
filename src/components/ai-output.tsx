@@ -25,8 +25,8 @@ export function AiOutput({
   }, [copied]);
 
   return (
-    <div className="rounded-lg border bg-card">
-      <div className="flex items-center justify-between border-b px-3 py-2">
+    <div className="glass rounded-xl overflow-hidden">
+      <div className="flex items-center justify-between border-b border-border/60 px-3 py-2">
         <span className="text-xs font-medium text-muted-foreground">
           {loading ? "Generating…" : "Editable output"}
         </span>
