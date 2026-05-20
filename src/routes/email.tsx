@@ -52,7 +52,7 @@ Goal/Message: ${intent}`
       icon={<Mail className="h-5 w-5" />}
     >
       <div className="grid gap-6 lg:grid-cols-2">
-        <div className="space-y-4 rounded-lg border bg-card p-5">
+        <div className="space-y-4 glass rounded-xl p-5">
           <div className="grid gap-2">
             <Label>Recipient</Label>
             <Input value={recipient} onChange={(e) => setRecipient(e.target.value)} placeholder="e.g. Sarah, my manager" />
@@ -81,7 +81,7 @@ Goal/Message: ${intent}`
               placeholder="Let them know the deck is ready, ask for feedback by Friday, mention the offsite next week…"
             />
           </div>
-          <Button onClick={generate} disabled={loading} className="w-full">
+          <Button onClick={generate} disabled={loading} className="w-full gradient-primary shadow-glow hover:opacity-90">
             {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : "Generate email"}
           </Button>
         </div>

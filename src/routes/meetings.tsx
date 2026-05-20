@@ -42,7 +42,7 @@ function MeetingsPage() {
       icon={<FileText className="h-5 w-5" />}
     >
       <div className="grid gap-6 lg:grid-cols-2">
-        <div className="space-y-4 rounded-lg border bg-card p-5">
+        <div className="space-y-4 glass rounded-xl p-5">
           <div className="grid gap-2">
             <Label>Meeting notes or transcript</Label>
             <Textarea
@@ -52,7 +52,7 @@ function MeetingsPage() {
               placeholder="Paste raw notes, bullet points, or full transcript…"
             />
           </div>
-          <Button onClick={run} disabled={loading} className="w-full">
+          <Button onClick={run} disabled={loading} className="w-full gradient-primary shadow-glow hover:opacity-90">
             {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : "Summarize"}
           </Button>
         </div>

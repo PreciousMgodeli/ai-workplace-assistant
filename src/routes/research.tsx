@@ -48,7 +48,7 @@ Audience: ${audience || "General professional"}`
       icon={<Search className="h-5 w-5" />}
     >
       <div className="grid gap-6 lg:grid-cols-2">
-        <div className="space-y-4 rounded-lg border bg-card p-5">
+        <div className="space-y-4 glass rounded-xl p-5">
           <div className="grid gap-2">
             <Label>Topic</Label>
             <Input value={topic} onChange={(e) => setTopic(e.target.value)} placeholder="e.g. Vector databases for SaaS search" />
@@ -68,7 +68,7 @@ Audience: ${audience || "General professional"}`
             <Label>Audience (optional)</Label>
             <Input value={audience} onChange={(e) => setAudience(e.target.value)} placeholder="e.g. Non-technical execs" />
           </div>
-          <Button onClick={run} disabled={loading} className="w-full">
+          <Button onClick={run} disabled={loading} className="w-full gradient-primary shadow-glow hover:opacity-90">
             {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : "Research"}
           </Button>
         </div>
